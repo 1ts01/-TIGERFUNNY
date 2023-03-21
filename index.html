@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
+  <title>ลิงค์แชร์กิจกรรม</title>
+</head>
+<body>
+    <script src="https://static.line-scdn.net/liff/edge/versions/2.5.0/sdk.js"></script>
+    <script>
+        async function main() {
+                                         // Liff ID
+            await liff.init({ liffId: "1656870942-pBymm9wN" })
+            await liff.shareTargetPicker([
+                {
+                    type: "flex",
+                    // ข้อความก่อนกดอ่าน
+                    altText: "พี่ว่างไหม",
+                    contents: 
+                    // โค้ดจาก line bot designer
+                    {
+  "type": "bubble",
+  "hero": {
+    "type": "box",
+    "layout": "vertical",
+    "contents": [
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "image",
+            "url": "https://media.discordapp.net/attachments/1087739489612480522/1087739624740372520/add1.jpeg?width=930&height=930",
+            "aspectRatio": "1:1",
+            "size": "full"
+          }
+        ],
+        "borderWidth": "bold",
+        "cornerRadius": "xxl",
+        "margin": "sm"
+      },
+      {
+        "type": "box",
+        "layout": "vertical",
+        "contents": [
+          {
+            "type": "text",
+            "text": "แจกเครดิตฟรี 50.-",
+            "color": "#000000",
+            "weight": "bold",
+            "align": "center"
+          },
+          {
+            "type": "text",
+            "text": "รับได้ทุกวัน ไม่จำกัด",
+            "color": "#000000",
+            "align": "center",
+            "weight": "bold"
+          },
+          {
+            "type": "button",
+            "action": {
+              "type": "uri",
+              "label": "คลิก",
+              "uri": "https://lin.ee/ejuRRCa"
+            },
+            "color": "#FF0000",
+            "style": "secondary",
+            "margin": "xs"
+          }
+        ]
+      }
+    ],
+    "backgroundColor": "#FFffff",
+    "borderWidth": "bold",
+    "cornerRadius": "xxl",
+    "offsetBottom": "sm"
+  }
+}
+                }
+            ])
+            liff.closeWindow()
+        }
+        main()
+    </script>
+</body>
+</html>
